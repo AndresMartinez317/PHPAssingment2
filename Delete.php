@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-session_start();
+
 if(isset($_SESSION['Username'])){
     include('header2.php');
 } else{

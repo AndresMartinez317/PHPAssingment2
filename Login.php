@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
- if(isset($_SESSION['Username'])){
-    include('header2.php');
-} else{
-    include('header.php');
-}
+session_start();
+include('header.php');
+
 $connection = mysqli_connect("localhost","root","","mydb");
 ?>
 <head>

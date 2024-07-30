@@ -4,19 +4,18 @@ $connection = mysqli_connect("localhost","root","","mydb");
 <!DOCTYPE html>
 <html lang="en">
 <?php
- if(isset($_SESSION['Username'])){
-    include('header2.php');
-} else{
-    include('header.php');
-} ?>
-<a href="Logout.php"> Logout </a>
+session_start();
+include('header2.php');
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body background="BG.jpg" >
 <form action="Update.php" method="post">
-            <fieldset> 
+            <fieldset class= "box-1"> 
                 <legend> Update info </legend>
                 <div>
                 <label for="input1" >ID</label>
@@ -41,8 +40,8 @@ $connection = mysqli_connect("localhost","root","","mydb");
         </fieldset>
         </form>
 
-        <form action="Delete.php" method="post">
-            <fieldset> 
+        <form action="Delete.php" method="post" id = "delete">
+            <fieldset class="box-2"> 
                 <legend> Delete a register </legend>
             <div>
                 <label for="input1" >ID</label>
@@ -50,7 +49,7 @@ $connection = mysqli_connect("localhost","root","","mydb");
              </div>
              <div>
                 <input type="reset">
-                <input type="submit" value="Register">
+                <input type="submit" value="Delete">
             </div>
             </fieldset>
             </form>

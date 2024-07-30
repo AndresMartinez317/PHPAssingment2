@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 ?>
 <!DOCTYPE html>
@@ -18,11 +18,7 @@ session_start();
         <hr>
         <h2>
         <?php
-        if(isset($_SESSION['Username'])){
-            echo $_SESSION['Username'];
-        } else {
             echo "Guest";
-        }
         ?> 
         </h2>
     </Header>

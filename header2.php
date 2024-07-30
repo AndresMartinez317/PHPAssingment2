@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 ?>
 <!DOCTYPE html>
@@ -15,6 +14,7 @@ session_start();
         <a href="index.html"> Form </a>
         <a href="Table.php"> Table </a>
         <a href="Sesion.php"> Update </a>
+        <a href="Logout.php"> Logout </a>
         <hr>
         <h2>
         <?php
